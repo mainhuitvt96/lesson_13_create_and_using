@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squared</title>
+</head>
+<body>
+    <label>Squared of </label> <input type="text" id ="input" oninput="caculate()"><label>is: </label><span id="result"></span>
+    <script>
+        // function squared(number) {
+        //     var result = number*number;
+        //     return result;
+        // }
+        // var squaredOf2 = squared(2);
+        // document.write('Squared of 2 is: ' + squaredOf2 +"<br>");
+
+        // var squaredOf5 = squared(5);
+        // document.write('Squared of 5 is: ' + squaredOf5 +"<br>");
+        function caculate() {
+            var input_Value = parseInt(document.getElementById('input').value);
+            var result = squared(input_Value);
+            document.getElementById("result").innerHTML = result;
+            //return result;
+        }
+    
+    
+    
+    </script>
+</body>
+</html>
